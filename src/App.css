@@ -1,0 +1,98 @@
+.library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 40px;
+  padding: 0 30px;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+main{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+img{
+  border-radius: 5px;
+}
+
+.library img{
+  width: 100%;
+}
+
+.title{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.book{
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.add-read-list{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.book:hover .add-read-list{
+  transform: scale(1);
+  background-color: rgba(000, 255, 255, .4);
+  z-index: 200;
+}
+
+.list-of-read{
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 900px;
+  background-color: #333;
+  gap: 20px;
+  padding: 20px;
+}
+
+.list-of-read img{
+  width: 150px;
+}
+
+.book{
+  width: fit-content;
+  height: fit-content;
+}
+
+.book button{
+  font-size: 40px;
+}
+
+section{
+  display: grid;
+  /* background-color: aqua; */
+  grid-template-columns: 70% 1fr;
+  min-height: 100vh;
+}
+
+/* button for view list of read */
+header button{
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+}
+
+header button img{
+  width: 30px;
+}
+
+.filters{
+  display: flex;
+  gap: 10px;
+}
